@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>NED EXAMINATION</title>
+    <link rel="icon" type="image/x-icon" href="img/sindhhec.png">
+
+    <!-- Font Awesome -->
+<!-- MDB -->
+
+    
+    <!--
+
+    Template 2108 Dashboard
+
+	http://www.tooplate.com/view/2108-dashboard
+
+    -->
+ 
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    
+    <link rel="stylesheet" href="assets/css/loginstyle.css">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+  <meta charset="UTF-8">
+  <title>Login Page with Background Image Example</title>
+
+
+
+
+
+     <style>
+         body, html {
+             height: 100%;
+             margin: 0;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+
+         * {
+             box-sizing: border-box;
+         }
+.h1{
+    font-family:  Georgia, 'Times New Roman', Times;
+}
+
+
+         /* Position text in the middle of the page/image */
+         .bg-text {
+             background-color: rgb(0,0,0); /* Fallback color */
+             background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+             color: white;
+             font-weight: bold;
+             border: 3px solid #f1f1f1;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             z-index: 2;
+             width: 80%;
+             padding: 20px;
+             text-align: center;
+         }
+         #myVideo {
+             position: fixed;
+             right: 0;
+             bottom: 0;
+             min-width: 100%;
+             min-height: 100%;
+         }
+
+        .admin-login {
+            display: none;
+           
+        }
+     </style>
+
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+    <source src="assets/img/video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<div class="container-fluid">
+<!-- partial:index.partial.html -->
+
+    <div class="bg-text  align-items-center justify-content-center">
+        <div class=" mt-2  ">
+            <div class="d-flex justify-content-center p-2">
+                <div class="px-4"><img src="assets/img/sindhhec.png" alt="sindh "></div>
+                <div class="p-2"><img src="assets/img/ncbc.png" alt="sindh " style="height: 80px; width: 160px  ;"></div>
+            </div>
+            <div class=" col-md-12 d-flex justify-content-center    ">
+                <a href="#">
+                    <h1 style="   font-family:  Georgia, 'Times New Roman', Times;
+                 color:moccasin; font-style: italic;"> <b> NED EXAMINATION SYSTEM </h1>
+                </a>
+            </div>
+        </div>
+        <hr class="px-4 ">
+        <div class="btn-group">
+            <button id="userLoginBtn" class="btn btn-primary m-2">User Login</button>
+            <button id="adminLoginBtn" class="btn  m-2" style="  background-color: #c97d0b;">Admin Login</button>
+        </div>
+        <div  id="admin-login" class="admin-login col-md-4 mx-auto ">
+            <h2 class="p-4 align-self-center">Admin Login</h2>
+            <form action="main.php" method="post" class="align-self-center"> 
+                <div class="form-field align-self-center">
+                    <input id="adminame" type="text" placeholder="Enter Admin" autocomplete="off" required/>
+                </div>
+                <div class="form-field">
+                    <input id = "admin_password" type="password" placeholder="Password" autocomplete="off"/>
+                </div>
+                <div class="form-field">
+                    <button id='admin_btn' class="btn" type="submit">Log in</button></div>
+            </form>
+            <!-- partial -->
+        </div>
+        <div  id="user-login" class="user-login   col-md-4   mx-auto  ">
+            <h2 class="p-4">User Login </h2>
+            <form action="main.php" method="post">
+                <div class="form-field">
+                    <input id="username" type="text" placeholder="Enter Username"  autocomplete="off"required/>
+                </div>
+                <div class="form-field">
+                    <input id = "user_password" type="password" placeholder="Password"  autocomplete="off" required/>
+                </div>
+                <div class="form-field">
+                    <button id='user_btn' class="btn" type="submit" style="  background-color: #0b4ac9;">Log in</button></div>
+            </form>
+            <!-- partial -->
+        </div>
+
+
+       
+            <footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 ">
+                      
+                        <p style="color:aliceblue;  font-family: 'Montserrat', sans-serif;"  > Copyright © 2023  Created by
+                        <br>
+                     <a rel="nofollow" style="color:aliceblue;  font-family: 'Montserrat', sans-serif;" href="https://ncbc.neduet.edu.pk/" >National Center for Big Data & Cloud Computing</a></p>
+                      </div>
+                   
+                  </div>
+                </div>
+              </footer>
+       
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Show user login by default
+            $('.user-login').show();
+            $('.admin-login').hide();
+
+            // User Login button click
+            $('#userLoginBtn').on('click', function () {
+                $('.user-login').show();
+                $('.admin-login').hide();
+            });
+
+            // Admin Login button click
+            $('#adminLoginBtn').on('click', function () {
+                $('.user-login').hide();
+                $('.admin-login').show();
+            });
+        });
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+
+  
+</script>
+</body>
+</html>

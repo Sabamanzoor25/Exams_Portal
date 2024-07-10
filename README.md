@@ -22,3 +22,8 @@ Improved workflow and productivity in the examination department by creating a d
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/sabamanzoor25/examination-portal.git
+
+
+
+
+<img  src="https://github.com/Sabamanzoor25/Exams_Portal/assets/102574980/f84542bd-d801-4f79-baed-2e9e06a1c4b6" width="300" height="250" />

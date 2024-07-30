@@ -15,7 +15,7 @@ Improved workflow and productivity in the examination department by creating a d
 - **Backend**: PHP for server-side logic.
 - **Frontend**: HTML, CSS, jQuery.
 - **Asynchronous Data Exchange**: AJAX.
-- **Database**: MySQL (or any other database you're using).
+- **Database**: MySQL
 
 ## Installation
 
